@@ -1,0 +1,332 @@
+<html lang="en">
+
+<head>
+
+</head>
+<link rel="stylesheet" href="assets/css/main.css">
+
+<style>
+   .show {
+      display: block !important;
+   }
+
+   .submenu1 {
+      display: none;
+   }
+
+
+   .custon-Ham-Lines{
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+   }
+
+  
+   .ul_list_ham {
+  list-style-type: none;
+  text-decoration: none;
+}
+.li_list_ham {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 18px;
+  margin-bottom:18px;
+  color:navy;
+  
+}
+
+.navbar-brand {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.has-dropdownOne {
+  position: relative;
+}
+
+.has-dropdownOne .submenuOne_1 {
+  display: block;
+}
+
+.submenuOne_1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 200px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  border-radius: 4px;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.submenuOne_1 li {
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #333;
+  transition: background-color 0.3s;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+.submenuOne_1 li:hover {
+  background-color: navy;
+  border-radius: 10px;
+  .li_list_ham {
+    color: white;
+    cursor:pointer;
+  }
+}
+
+
+.course_submenu:hover {
+  background-color: navy;
+  border-radius: 10px;
+  padding: 10px;
+  .li_list_ham {
+    color: white;
+  }
+}
+
+/* Submenu indicator */
+.has-dropdownOne::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 991.98px) {
+  .has-dropdownOne .submenuOne_1 {
+    position: static;
+    display: none;
+    width: auto;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .has-dropdownOne:hover .submenuOne_1 {
+    display: block;
+  }
+
+  .has-dropdownOne::after {
+    display: none;
+  }
+
+  .submenuOne_1 li {
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+
+   
+
+
+</style>
+
+<body>
+   <header>
+      <div class="tp-header__area tp-header__transparent">
+         <div class="tp-header__main" id="header-sticky">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-6">
+                     <div class="logo has-border">
+                        <a href="index.html">
+                           <img src="assets/img/logo/WhatsApp_Image_2024-04-14_at_12.04.51_AM-removebg-preview.png"
+                              alt="logo">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-xxl-6 col-xl-6 col-lg-7 d-none d-lg-block ">
+                     <div class="main-menu">
+                        <nav id="mobile-menu">
+                           <ul>
+                              <li>
+                                 <a href="index.html">Home</a>
+                                 <!--<ul class="submenu">
+                                   
+                               </ul>-->
+                              </li>
+                              <li>
+                                 <a href="about-us.html">About</a>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="course.html">Courses</a>
+                                 <ul class="submenu">
+                                    <!-- <li><a href="course-list.html">Courses List</a></li> -->
+                                    <li><a href="course.html">Courses Catalouge</a></li>
+                                    <li><a href="course-details.html">Course Details</a></li>
+                                    <!-- <li><a href="cart.html">Cart</a></li>
+                                  <li><a href="checkout.html">Checkout</a></li> -->
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="#">Pages</a>
+                                 <ul class="submenu">
+                                    <li><a href="event.html">Events</a></li>
+                                    <li><a href="event-details.html">Event Details</a></li>
+
+                                    <li><a href="faq.html">FAQ</a></li>
+
+                                 </ul>
+                              </li>
+                              <li class="has-dropdown">
+                                 <a href="blog.html">Blog</a>
+                                 <ul class="submenu">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                 </ul>
+                              </li>
+                              <li>
+                               <a href="contact.html">Contact Us</a>
+                            </li>
+                           </ul>
+                         
+                        </nav>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-4 col-lg-3 col-md-6 col-6">
+                     <div class="tp-header__main-right d-flex justify-content-end align-items-center pl-30">
+                        <div class="header-acttion-btns d-flex align-items-center d-none d-md-flex">
+
+                           <!-- <a href="sign-up.html" class="tp-btn br-0">
+                              <span>Sign-Up <i></i> </span>
+                              <div class="transition"></div>
+                           </a> -->
+                           <a href="sign-up.html" class="tp-btn br-0">
+                              <span>Sign-Up<i class="fa-regular "></i> </span>
+                              <div class="transition"></div>
+                           </a>
+                           
+                        </div>
+                     
+                          
+                    
+                        
+                        <div class="ml-50 d-lg-none">
+
+
+                           <nav class="navbar navbar-light fixed-top navbar-half-width">
+                              <a class="navbar-brand" href="#" >
+                               
+                              </a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                 data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                                 <span class="navbar-toggler-icon custon-Ham-Lines"></span>
+                              </button>
+                              
+                              <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                                 aria-labelledby="navbarOffcanvasLgLabel">
+                                
+                                 <div class="offcanvas-header" >
+                           
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                                    
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    
+                                       aria-label="Close"></button>
+                                       
+                                 </div>
+                                 <ul class="ul_list_ham">
+                                    
+                                    <li class="course_submenu">
+                                     <p class="li_list_ham"><a  href="index.html">Home</a></p> 
+                                    </li>
+                                    <li class="course_submenu">
+                                     <p class="li_list_ham"><a  href="about-us.html">About</a></p> 
+                                    </li>
+                                    <li class="has-dropdownOne">
+                                      <p class="li_list_ham"><a
+                                        
+                                       href="#"
+                                       onclick="toggleSubmenu(event, 'coursesSubMenu')"
+                                       >Courses</a
+                                     ></p>
+                                      <ul class="submenuOne_1" id="coursesSubMenu">
+                                        <li>
+                                          <p class="li_list_ham"><a  href="course.html">Courses Catalouge</a></p>
+                                        </li>
+                                        <li>
+                                          <a class="li_list_ham" href="course-details.html"
+                                            >Course Details</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li class="has-dropdownOne">
+                                      <p class="li_list_ham"><a
+                                       
+                                       href="#"
+                                       onclick="toggleSubmenu(event, 'pagesSubMenu')"
+                                       >Pages</a
+                                     ></p>
+                                      <ul class="submenuOne_1" id="pagesSubMenu">
+                                        <li><a class="li_list_ham" href="event.html">Events</a></li>
+                                        <li>
+                                          <a class="li_list_ham" href="event-details.html"
+                                            >Event Details</a
+                                          >
+                                        </li>
+                                        <li><a class="li_list_ham" href="faq.html">FAQ</a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="has-dropdownOne">
+                                      <a
+                                        class="li_list_ham"
+                                        href="#"
+                                        onclick="toggleSubmenu(event, 'blogSubMenu')"
+                                        >Blog</a
+                                      >
+                                      <ul class="submenuOne_1" id="blogSubMenu">
+                                        <li><a class="li_list_ham" href="blog.html">Blogs</a></li>
+                                        <li>
+                                          <a class="li_list_ham" href="blog-details.html">Blog Details</a>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li class="course_submenu" style="margin-top: 13px;">
+                                       <p class="li_list_ham"><a  href="sign-up.html">Sign-Up</a></p> 
+                                      </li>
+                                  </ul>
+                              </div>
+                           </nav>
+
+
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <script>
+      function toggleSubmenu(event, submenuId) {
+         event.preventDefault();
+         event.stopPropagation();
+         var submenu = document.getElementById(submenuId);
+         submenu.classList.toggle("show");
+      }
+
+   </script>
+
+</body>
+
+</html>

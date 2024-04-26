@@ -82,7 +82,7 @@ const quizData1 = [
  
   
   let currentQuestion_1 = 0;
-  let score_1 = 0;
+  var score_1 = 0;
   let incorrectAnswers_1 = [];
   
   function shuffleArray1(array) {

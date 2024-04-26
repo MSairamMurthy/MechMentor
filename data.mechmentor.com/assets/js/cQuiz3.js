@@ -76,7 +76,7 @@ const quizData3 = [
 //   courseCompletionEnable.classList.add('container', 'mt-5', 'd-flex', 'justify-content-between', 'd-none')
   
   let currentQuestion_3 = 0;
-  let score_3 = 0;
+  var score_3 = 0;
   let incorrectAnswers_3 = [];
   
   function shuffleArray3(array) {
@@ -166,7 +166,7 @@ const quizData3 = [
     if(score_3>=8){           
         courseCompletionEnable.classList.add('container', 'mt-5', 'd-flex', 'justify-content-between')
         courseCompletionEnable.classList.remove('d-none')
-
+        displayBadge();
       }else{
         courseCompletionEnable.classList.add('container', 'mt-5', 'd-flex', 'justify-content-between', 'd-none')
 
@@ -200,7 +200,7 @@ const quizData3 = [
     if(score_3>=8){           
         courseCompletionEnable.classList.add('container', 'mt-5', 'd-flex', 'justify-content-between')
         courseCompletionEnable.classList.remove('d-none')
-
+        displayBadge();
       }else{
         courseCompletionEnable.classList.add('container', 'mt-5', 'd-flex', 'justify-content-between', 'd-none')
 
@@ -246,7 +246,7 @@ const quizData3 = [
     if(score_3>=8){           
         courseCompletionEnable.classList.add('container', 'mt-5', 'd-flex', 'justify-content-between')
         courseCompletionEnable.classList.remove('d-none')
-
+        displayBadge();
       }else{
         courseCompletionEnable.classList.add('container', 'mt-5', 'd-flex', 'justify-content-between', 'd-none')
 
@@ -258,3 +258,17 @@ const quizData3 = [
   showAnswerButton3.addEventListener('click', showAnswer3);
   
   displayQuestion3();
+
+function displayBadge(){
+  const scoreTotal = score_1 + score_2 + score_3;
+const badgeContainer = document.getElementById('badge');
+
+if (scoreTotal >= 24 && scoreTotal <= 25) {
+    badgeContainer.innerHTML = '<img  src="assets/img/icons/bronze.jpg" alt="Bronze Badge">';
+    console.log("score is comming!!!!");
+} else if (scoreTotal >= 26 && scoreTotal <= 28) {
+    badgeContainer.innerHTML = '<img src="assets/img/icons/silver.png" alt="Silver Badge">';
+} else if (scoreTotal >= 29 ) {
+    badgeContainer.innerHTML = '<img src="assets/img/icons/gold.jpg" alt="Gold Badge">';
+}
+}

@@ -170,7 +170,7 @@ const quizData1 = [
           }
 
 
-    if(score_1>=3){
+    if(score_1>=8){
       secondBtnLaunch.disabled=false;      
     }else{
       secondBtnLaunch.disabled=true;
@@ -200,7 +200,7 @@ const quizData1 = [
       progressBar.setAttribute('aria-valuenow', '0'); // Update aria-valuenow attribute
           }
 
-    if(score_1>=3){
+    if(score_1>=8){
       secondBtnLaunch.disabled=false;
       
     }else{

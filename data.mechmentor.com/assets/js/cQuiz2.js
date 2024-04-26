@@ -188,7 +188,7 @@ const quizData2 = [
     resultContainer2.innerHTML = '';
     displayQuestion2();
 
-    if (score_2 >= 3) {
+    if (score_2 >= 8) {
       progressBar.style.width = '66%'; 
       progressBar.innerHTML = '66%'; 
       progressBar.setAttribute('aria-valuenow', '33'); 

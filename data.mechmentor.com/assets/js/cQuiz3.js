@@ -159,11 +159,11 @@ const quizData3 = [
     } else {
       progressBar.style.width = '66%'; // Set progress bar to 0% width
       progressBar.innerHTML = '66%'; // Update text inside the progress bar
-      progressBar.setAttribute('aria-valuenow', '0'); // Update aria-valuenow attribute
+      progressBar.setAttribute('aria-valuenow', '0'); // Update aria-valuenow attributescore_2>=8
     }
 
 
-    if(score_3>=3){           
+    if(score_3>=8){           
         courseCompletionEnable.classList.add('container', 'mt-5', 'd-flex', 'justify-content-between')
         courseCompletionEnable.classList.remove('d-none')
 

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin Sans&display=swap');
+
+body {
+    background: #5372F0;
+    color: rgb(230, 230, 230);
+}
+
+.app {
+    font-family: Josefin Sans;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.questions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.question-box {
+    background-color: rgb(1, 11, 19);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 15px;
+    color: rgb(230, 230, 230);
+    border-radius: 10px;
+    padding: 0 40px 10px 40px;
+}
+
+h1{
+    font-family: Pacifico;
+    font-weight: 400;
+}
+
+.question-box h1 {
+    text-align: left;
+    color: rgb(40, 137, 167);
+}
+
+.question-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.question-button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(2, 77, 99);
+    color: rgb(255, 255, 255);
+}
+
+.question-button:disabled {
+    background-color: rgb(94, 113, 116);
+    color: rgb(94, 113, 116);
+}
+
+.button-wrapper canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.back-button {
+    margin: 20px;
+    background-color: darksalmon;
+  }
+  
+  select {
+    margin: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+  }
+  
+  .answer-display {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .answer-display.correct {
+    color: rgb(211, 211, 117);
+  }
+  
+  .answer-display.wrong {
+    color: rgb(211, 134, 117);
+  }
+  
+  .question-box h1 {
+    text-align: left;
+    color:rgb(117, 136, 211)
+  }
+
+
+
+  .buttons{
+    padding-left:750px;
+  }
+
+  

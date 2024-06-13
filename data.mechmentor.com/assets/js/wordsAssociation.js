@@ -55,13 +55,14 @@ function populateQuestions() {
     const questionBox = document.createElement('div')
     questionBox.classList.add('question-box')
 
-    const logoDisplay = document.createElement('h1')
-    logoDisplay.textContent = '✒'
-    questionBox.append(logoDisplay)
+   
 
     question.quiz.forEach((tip) => {
       const tipText = document.createElement('p')
       tipText.textContent = tip
+      tipText.style.color = 'white'
+        tipText.style.fontSize = '15px'
+        tipText.style.marginTop = '14px'
       questionBox.append(tipText)
     })
 
